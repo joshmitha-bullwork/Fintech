@@ -1,0 +1,143 @@
+/* Main container for the entire page */
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f5f9; /* bg-slate-100 */
+  font-family: 'Inter', sans-serif;
+  padding: 1.5rem; /* p-6 */
+}
+
+/* Card containing the OTP form */
+.card {
+  width: 100%;
+  max-width: 32rem; /* max-w-lg from login page */
+  padding: 2rem; /* p-8 */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* space-y-6 */
+  background-color: #fff;
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-2xl from login page */
+}
+@media (min-width: 640px) {
+  .card {
+    padding: 2rem;
+}
+}
+
+/* Back link */
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+  color: #4b5563; /* A bit darker gray */
+  text-decoration: none;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+.backLink:hover {
+  color: #059669; /* Matches the hover color of the main button */
+}
+
+/* Titles and subtitles */
+.title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold from login page */
+  text-align: center;
+  color: #1f2937; /* text-gray-800 */
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.875rem; /* text-sm */
+  color: #4b5563; /* text-gray-600 */
+}
+
+/* Message alert box */
+.message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+  padding: 1rem; /* p-4 */
+  font-size: 0.875rem; /* text-sm */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+}
+
+.successMessage {
+  background-color: #d1fae5; /* bg-green-100 from login page */
+  color: #1a9774; /* text-green-700 from login page */
+}
+
+.errorMessage {
+  background-color: #fef2f2; /* bg-red-100 from login page */
+  color: #b91c1c; /* text-red-700 from login page */
+}
+
+/* Form container for OTP inputs and button */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* Increased gap for better spacing */
+}
+
+/* OTP Input fields */
+.otpInputContainer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem; /* space-x-2 */
+}
+
+.otpInputField {
+  width: 3rem; /* w-12 */
+  height: 3rem; /* h-12 */
+  text-align: center;
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  border: 2px solid #d1d5db; /* border-2 border-gray-300 */
+  border-radius: 0.5rem; /* rounded-lg */
+  transition: border-color 0.2s ease-in-out;
+}
+.otpInputField:focus {
+  outline: none;
+  border-color: #10b981; /* focus:border-teal-500 from login page */
+}
+
+/* Verify button */
+.verifyButton {
+  width: 100%;
+  padding-top: 0.5rem; /* py-2 */
+  padding-bottom: 0.5rem;
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem;
+  border-radius: 0.5rem; /* rounded-lg */
+  background-color: #36a07d; /* bg-teal-500 from login page */
+  color: #fff;
+  font-weight: 600; /* font-semibold */
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* gap-2 */
+}
+.verifyButton:hover {
+  background-color: #059669; /* hover:bg-teal-600 from login page */
+}
+.verifyButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* For the spinning loader icon */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
