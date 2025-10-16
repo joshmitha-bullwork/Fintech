@@ -69,7 +69,7 @@ const StockWidget = React.memo(({ stock }) => {
       try {
         // NOTE: Replace 'http://localhost:5000/api/chat' 
         // with your deployed Vercel backend URL if you are testing the live site.
-      const res = await fetch(`${API_BASE_URL}/chat`, {
+      const res = await fetch(`${NEXT_PUBLIC_API_URL}/chat`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
