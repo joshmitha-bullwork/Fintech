@@ -39,7 +39,7 @@
   transition: color 0.2s ease-in-out;
 }
 .backLink:hover {
-  color: #059669; /* Matches the hover color of the main button */
+  color: #36a0a0; /* Matches the hover color of the main button */
 }
 
 /* Titles and subtitles */
@@ -70,7 +70,7 @@
 
 .successMessage {
   background-color: #d1fae5; /* bg-green-100 from login page */
-  color: #1a9774; /* text-green-700 from login page */
+  color: #36a0a0; /* text-green-700 from login page */
 }
 
 .errorMessage {
@@ -105,7 +105,7 @@
 }
 .otpInputField:focus {
   outline: none;
-  border-color: #10b981; /* focus:border-teal-500 from login page */
+  border-color: #36a0a0; /* focus:border-teal-500 from login page */
 }
 
 /* Verify button */
@@ -116,7 +116,7 @@
   padding-left: 1rem; /* px-4 */
   padding-right: 1rem;
   border-radius: 0.5rem; /* rounded-lg */
-  background-color: #36a07d; /* bg-teal-500 from login page */
+  background-color: #36a0a0; /* bg-teal-500 from login page */
   color: #fff;
   font-weight: 600; /* font-semibold */
   transition: background-color 0.2s ease-in-out;
@@ -126,7 +126,7 @@
   gap: 0.5rem; /* gap-2 */
 }
 .verifyButton:hover {
-  background-color: #059669; /* hover:bg-teal-600 from login page */
+  background-color:#36a0a0; /* hover:bg-teal-600 from login page */
 }
 .verifyButton:disabled {
   opacity: 0.5;
