@@ -12,6 +12,8 @@ import {
   X,
 } from "lucide-react";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL; 
+
 // --- Initial Data ---
 const initialStocks = [
   {
@@ -67,15 +69,14 @@ const StockWidget = React.memo(({ stock }) => {
       setAiResponse(null);
 
       try {
-        // NOTE: Replace 'http://localhost:5000/api/chat' 
-        // with your deployed Vercel backend URL if you are testing the live site.
-      const res = await fetch(`${NEXT_PUBLIC_API_URL}/chat`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            prompt: `You are a financial analyst. The user asked about ${stock.symbol} (${stock.name}): ${query}`,
-          }),
-        });
+        // FIX APPLIED HERE: Use the API_URL constant or process.env directly
+        const res = await fetch(`${API_URL}/chat`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              prompt: `You are a financial analyst. The user asked about ${stock.symbol} (${stock.name}): ${query}`,
+            }),
+          });
 
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
