@@ -67,7 +67,8 @@ const StockWidget = React.memo(({ stock }) => {
       setAiResponse(null);
 
       try {
-        // Send user query to your Next.js API route
+        // NOTE: Replace 'http://localhost:5000/api/chat' 
+        // with your deployed Vercel backend URL if you are testing the live site.
         const res = await fetch("http://localhost:5000/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -214,6 +215,10 @@ const StockWidget = React.memo(({ stock }) => {
     </div>
   );
 });
+
+// ✅ FIX: Add displayName to satisfy ESLint/Next.js build requirements
+StockWidget.displayName = 'StockWidget';
+
 
 // --- Main Dashboard ---
 export default function StockDashboard() {
