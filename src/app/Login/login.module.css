@@ -58,12 +58,12 @@
 
 .successMessage {
   background-color: #d1fae5; /* bg-green-100 */
-  color: #1a9774; /* text-green-700 */
+  color:  #36a0a0; /* text-green-700 */
 }
 
 .errorMessage {
   background-color: #fef2f2; /* bg-red-100 */
-  color: #b91c1c; /* text-red-700 */
+  color:  #36a0a0; /* text-red-700 */
 }
 
 /* Toggle Buttons */
@@ -90,7 +90,7 @@
 }
 
 .toggleButton.active {
-  background-color: #36a07d; /* bg-teal-500 */
+  background-color: #36a0a0; /* bg-teal-500 */
   color: #fff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -112,7 +112,7 @@
   outline: none;
 }
 .inputField:focus {
-  border-color: #10b981; /* focus:border-teal-500 */
+  border-color:  #36a0a0; /* focus:border-teal-500 */
 }
 
 .submitButton {
@@ -122,7 +122,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 0.5rem;
-  background-color: #36a07d; /* bg-teal-500 */
+  background-color:  #36a0a0; /* bg-teal-500 */
   color: #fff;
   font-weight: 600;
   transition-property: all;
@@ -134,7 +134,7 @@
     margin-bottom: 5px;
 }
 .submitButton:hover {
-  background-color: #059669; /* hover:bg-teal-600 */
+  background-color: #36a0a0;/* hover:bg-teal-600 */
 }
 .submitButton:disabled {
   opacity: 0.5;
@@ -149,7 +149,7 @@
 }
 
 .toggleLink {
-  color: #0d9488; /* text-teal-600 */
+  color: #36a0a0; /* text-teal-600 */
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;

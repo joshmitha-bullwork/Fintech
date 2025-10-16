@@ -86,7 +86,7 @@ export default function LoginPage() {
       <div className={styles.card}>
         <div className={styles.header}>
           <Link href="/" className={styles.logo}>
-            Finder
+            Fintech
           </Link>
         </div>
         <Message msg={message} />
